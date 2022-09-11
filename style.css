@@ -1,0 +1,92 @@
+
+body {
+   margin: 0;
+   padding: 0;
+   font-family: sans-serif;
+   background-color: #111;
+}
+
+h1 {
+   text-align: center;
+   color: #eee;
+}
+
+.contenedor {
+   height: 150px;
+   background-color: #111;
+}
+
+.circular-progress {
+   width: 15rem;
+   height: 15rem;
+   background: linear-gradient(0deg, rgb(23, 200, 23) 0 50%, rgba(37, 174, 9, 0.3) 50% 100%);
+   border-radius: 50%;
+   margin: auto;
+   position: relative;
+   transform: rotate(5.4deg);
+}
+
+.circular-progress::before {
+   content: "Progress";
+   width: 15rem;
+   height: 15rem;
+   top: 0;
+   left: 0;
+   position: absolute;
+   background: #111 content-box;
+   border-radius: 50%;
+   padding: .5em;
+   box-sizing: border-box;
+   font-size: 2rem;
+   color: #fff;
+   text-align: center;
+   line-height: 11rem;
+   transform: rotate(-5.4deg);
+}
+
+.circular-progress::after {
+   content: "3%";
+   width: 15rem;
+   height: 15rem;
+   top: 0;
+   left: 0;
+   position: absolute;
+   background: linear-gradient(transparent 0 50%, #111 50% 100%);
+   border-radius: 50%;
+   padding: .5em;
+   box-sizing: border-box;
+   font-size: 1.5rem;
+   color: #fff;
+   text-align: center;
+   line-height: 6rem;
+   transform: scale(1.1) rotate(-5.4deg);
+}
+
+#tabla-tuit {
+      background: rgb(203, 248, 206);
+      width: 20rem;
+      margin: auto;
+      text-align: center;
+      position: relative;
+      z-index: 1000;
+      border: 3px solid rgb(6, 112, 6);
+}
+table {
+   margin: 0 auto;
+}
+
+.tuits td{
+   table-layout: fixed;
+   border-collapse: collapse;
+   border: 1.5px solid rgb(5, 71, 5);
+   margin: auto;
+   padding: 3px;
+}
+
+td a {
+   font-size: .8em;
+}
+
+.celda-tuit {
+   width: 78%;
+}
